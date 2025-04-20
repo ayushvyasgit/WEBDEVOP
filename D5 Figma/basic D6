@@ -1,0 +1,37 @@
+function App() {
+  return (
+    <>
+      <div id='page' className='min-h-screen flex flex-col justify-center items-center bg-[#00274e]'>
+        <div className='flex flex-col justify-center items-center text-center px-4'>
+          
+          {/* Logo & Title */}
+          <div id='webinar.gg' className='flex items-center space-x-2 mb-[100px]'>
+            <img src='/a.png' alt='Webinar logo' className='w-5 h-5' />
+            <div className='flex items-baseline space-x-1'>
+              <div id='Webinar.gg-text' className='font-bold text-xl text-[#548fab]'>Webinar</div>
+              <div className='font-bold text-xl text-[#8badcf]'>.gg</div>
+            </div>
+          </div>
+
+          {/* Age Verification Section */}
+          <div className='font-bold text-xl text-[#8badcf] mb-12'>
+            Verify Your Age 
+          </div>
+          <div className='font-bold text-xl mb-5'>
+            Confirm your birth year 
+          </div>
+          <input 
+            type='number' 
+            placeholder='DOB' 
+            className='border border-black rounded px-3 py-2 text-center mb-10 w-[200px]' 
+          />
+          <button className='bg-[#f7f6f5] p-2 w-[200px] rounded hover:bg-gray-200 transition'>
+            Continue 
+          </button>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default App;
